@@ -325,7 +325,23 @@ ul{
     font-size: 12px;
 }
 
+/* FOOTER */
 
+footer .container{
+    width: 480px;
+    margin: 0 auto;
+}
+
+footer p{
+    color: white;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+}
+
+footer u{
+    color: rgba(89,87,119,255);
+}
 
 
 
