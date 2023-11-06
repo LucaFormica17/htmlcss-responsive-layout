@@ -51,6 +51,10 @@ p{
     line-height: 2;
 }
 
+.pos-rel{
+    position: relative;
+}
+
 /* BACKGROUND */
 
 .bg-blue{
@@ -232,6 +236,53 @@ ul{
     padding: 10px 60px;
 }
 
+/* ABOUT US SECTION */
+
+.about-us h2{
+    font-size: 40px;
+    color: rgba(151,146,228,255);
+    margin-top: 30px;
+}
+
+.about-us-img{
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.about-us img{
+    width: auto; 
+    height: 100%;  
+}
+
+.about-us .fa-quote-left{
+    color: rgba(151,146,228,255);
+    position: absolute;
+    font-size: 70px;
+    left: 40%;
+}
+
+.about-us strong{
+    color: rgba(151,146,228,255);
+    font-size: 30px;
+    display: block;
+    margin: 20px 0;
+}
+
+.about-us .btn{
+    background-color: rgba(151,146,228,255);
+    color: white;
+}
+
+.about-us span{
+    margin-left: 5px;
+    font-size: 15px;
+}
+
 
 
 
@@ -271,9 +322,15 @@ ul{
         padding-left: 220px;
     }
 
+    /* ABOUT US SECTION */
+
     .benefits .col,
     .about-us .col{
         width: calc(100% / 2 - 60px);
+    }
+
+    .about-us .fa-quote-left{
+        left: 50%;
     }
 }
 
@@ -290,50 +347,6 @@ ul{
     header img{
         width: 60px;
     }
-
-    /* JUMBO SECTION */
-
-    .jumbo .col{
-        display: flex;
-    }
-    
-    .jumbo img{
-        padding-top: 100px;
-        padding-right: 30px;
-        width: 100%;
-    }
-
-    .jumbo .col:first-child .content:first-child{
-        padding-right : 30px;
-    }
-
-    /* PLANNING SECTION */
-
-    .planning .col{
-        width: calc(100% / 2 - 60px);
-    }
-
-    .planning .col:first-child h3{
-    margin-top: 50px;
-    }
-
-    .planning .card{
-        width: 70%;
-        margin-top: 200px;
-    }
-
-    .benefits .col{
-        width: calc(100% / 3 - 60px);
-    }
-
-    .about-us .col:first-child{
-        width: calc(70% - 60px);
-    }
-
-    .about-us .col:last-child{
-        width: calc(30% - 60px);
-    }
-
     header span{
         display: none;
     }
@@ -356,4 +369,57 @@ ul{
         padding: 7px 10px;
         border-radius: 100px;
     }
+    
+    /* JUMBO SECTION */
+
+    .jumbo .col{
+        display: flex;
+    }
+    
+    .jumbo img{
+        padding-top: 100px;
+        padding-right: 30px;
+        width: 100%;
+    }
+    
+    .jumbo .col:first-child .content:first-child{
+        padding-right : 30px;
+    }
+    
+    /* PLANNING SECTION */
+    
+    .planning .col{
+        width: calc(100% / 2 - 60px);
+    }
+    
+    .planning .col:first-child h3{
+        margin-top: 50px;
+    }
+    
+    .planning .card{
+        width: 70%;
+        margin-top: 200px;
+    }
+
+    /* BENEFITS SECTION */
+    
+    .benefits .col{
+        width: calc(100% / 3 - 60px);
+    }
+
+    /* ABOUT US SECTION */
+    
+    .about-us .col:first-child{
+        width: calc(70% - 60px);
+    }
+    
+    .about-us .col:last-child{
+        width: calc(30% - 60px);
+    }
+
+    .about-us .fa-quote-left{
+        left: 70%;
+        bottom: 85%;
+    }
+    
 }
