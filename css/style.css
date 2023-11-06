@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-header{
-    height: 75px;
+header img{
+    width: 80px;
 }
 
 footer{
@@ -33,6 +33,10 @@ footer{
     margin: 20px;
 }
 
+img{
+    width: 100%;
+}
+
 /* BACKGROUND */
 
 .bg-blue{
@@ -47,9 +51,21 @@ footer{
     background-color: rgba(151,146,228,255);
 }
 
-/* UTILITIES */
+/* SPECIFIC */
 
+header .col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+header span{
+    font-size: 25px;
+}
+
+ul{
+    display: none;
+}
 
 /* TO DELETE */
 
@@ -136,5 +152,28 @@ footer .col{
 
     .about-us .col:last-child{
         width: calc(30% - 40px);
+    }
+
+    header span{
+        display: none;
+    }
+
+    ul{
+        display: block;
+        display: flex;
+        color: white;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    li{
+        padding: 0 15px;
+    }
+
+     ul li:last-child{
+        background-color: white;
+        color: black;
+        padding: 7px 10px;
+        border-radius: 100px;
     }
 }
